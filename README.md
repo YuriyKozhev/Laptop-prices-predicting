@@ -20,6 +20,8 @@ CSV-files descriptions:
 * train.csv, test.csv - training and validation datasets for model training (made with a customly designed splitting function)
 
 # How to build and start Docker container
+## Link to Docker Hub image
+https://hub.docker.com/r/yurikoz/ds_project
 ## Run in terminal (in the current folder):
 docker-compose -f "docker-compose.yml" up --build 
 ## Then open the suggested link (the token may be different) in the browser:
