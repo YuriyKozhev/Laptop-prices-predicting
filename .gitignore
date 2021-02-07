@@ -1,1 +1,10 @@
 .ipynb_checkpoints
+.cache
+.config
+.ipython
+.jupyter
+.local
+.vscode-server
+.gitconfig
+.keras
+.vscode

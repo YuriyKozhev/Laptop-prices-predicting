@@ -18,3 +18,9 @@ CSV-files descriptions:
 * data.csv - data after the 1st stage of processing
 * processed_data.csv  - data after the 2nd stage of processing
 * train.csv, test.csv - training and validation datasets for model training (made with a customly designed splitting function)
+
+# How to build and start Docker container
+## Run in terminal (in the current folder):
+docker-compose -f "docker-compose.yml" up --build 
+## Then open the suggested link (the token may be different) in the browser:
+http://127.0.0.1:8888/?token=611d5aa6515e4e95f015ee082b82c271cb62dc0047776bf0

@@ -1,0 +1,25 @@
+version: '3'
+services:
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - 4444:4444
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - '5433:5432'
+    environment:
+      POSTGRES_PASSWORD: admin
+  ds_project:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./://home/jovyan/
+    ports:
+      - '8888:8888'
+volumes:
+  pgdata:
